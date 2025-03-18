@@ -1,0 +1,123 @@
+.dashboard-container {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100vh;
+}
+
+.sidebar {
+    width: 100%;
+    max-width: 175px;
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    flex: 1 1 250px;
+}
+
+.profile {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu li {
+    margin: 10px 0;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+.content {
+    flex: 3 1 700px;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.posts .post {
+    background: white;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.post-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.post-profile-pic {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.post-user-info h3 {
+    margin: 0;
+}
+
+.post-user-info p {
+    margin: 0;
+    color: gray;
+}
+
+.post-content {
+    margin-top: 10px;
+}
+
+.post-image {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.post-actions {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.post-actions form,
+.post-actions a {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.edit-button,
+.delete-button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 12px;
+    cursor: pointer;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.edit-button:hover {
+    background-color: #2980b9;
+}
